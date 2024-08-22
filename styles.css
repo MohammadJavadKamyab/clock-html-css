@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #1c1c1c, #4a4a4a);
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.digital-clock {
+    font-size: 2rem;
+    margin-right: 50px;
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.analog-clock {
+    width: 300px;
+    height: 300px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    background-color: #2e2e2e;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.hour, .minute, .second {
+    position: absolute;
+    background-color: #fff;
+    transform-origin: bottom;
+    transform: rotate(90deg);
+    border-radius: 6px;
+}
+
+.hour {
+    width: 8px;
+    height: 70px;
+    top: 80px;
+    left: 146px;
+}
+
+.minute {
+    width: 4px;
+    height: 100px;
+    top: 50px;
+    left: 148px;
+}
+
+.second {
+    width: 2px;
+    height: 120px;
+    top: 30px;
+    left: 149px;
+    background-color: #ff6347;
+}
+.designedby {
+    color: #ff6347;
+    border: #fff solid;
+}
